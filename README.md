@@ -20,7 +20,7 @@ Conteúdo da aula 5 da imersão:
 
 - Aula 5: Frameworks e Eficiência: Introdução ao React. Instalação e criação de um projeto React e, então, migração dos componentes desenvolvidos nas aulas anteriores para este projeto.
 
-O material das demais aulas está disponível em [neste repositório](imersao-frontend-alura).
+O material das demais aulas está disponível em [neste repositório](https://github.com/ncdavila/imersao-frontend-alura).
 
 ## Conteúdos complementares:
 Seguem alguns links oferecidos durante a imersão que considero interessantes:
