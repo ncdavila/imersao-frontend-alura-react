@@ -2,13 +2,19 @@
  * Header component.
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import smallRight from "../../assets/icons/small-right.png";
 import smallLeft from "../../assets/icons/small-left.png";
 import search from "../../assets/icons/search.png";
 
-export default function Header() {
+export default function Header({onSearch}) {
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const handleInput = (event) => {
+        setSearchTerm(event.target.value);
+        onSearch(event.target.value);
+    };
     return (
         <nav className="header__navigation">
             <div className="navigation">
@@ -20,7 +26,7 @@ export default function Header() {
                 </button>
                 <div className="header__search">
                     <img src={search} alt=""/>
-                    <input type="text" id="search-input"placeholder="O que você quer ouvir?" maxength="800"/>
+                    <input type="text" id="search-input" value={searchTerm} onChange={handleInput} placeholder="O que você quer ouvir?" maxLength="800"/>
                 </div>
             </div>
             <div className="header__login">

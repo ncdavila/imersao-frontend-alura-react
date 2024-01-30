@@ -8,14 +8,12 @@ export default function Card (props) {
     return (
         <a href="./" className="cards">
             <div className="cards" style={{background: props.bgColor}}>
-                {console.log(props.image)}
                 <img src={props.image} alt="" />
                 <span>{props.title}</span>
             </div>
         </a>  
     )
 }
-
 
 Card.propTypes = {
     image: PropTypes.string.isRequired,

@@ -1,3 +1,9 @@
+.artist {
+    --column-count: 5;
+    --grid-gap: 24px;
+    --min-container-width: 372px;
+}
+
 /* Playlist */
 .playlist-container {
     height: 68vh;
