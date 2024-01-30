@@ -1,0 +1,58 @@
+/* Playlist */
+.playlist-container {
+    height: 68vh;
+    padding-top: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--bg-container-color);
+}
+.playlists-result__header {
+    margin: 24px;
+}
+.playlists-result__header #greeting {
+    color: var(--text-base-light);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+.playlists-result__header .subtitle {
+    color: var(--text-base-light);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Scroll */
+.playlists-result__cards {
+    max-height: 43vh;
+    margin: 24px;
+    overflow-y: auto;
+}
+.playlists-result__cards::-webkit-scrollbar {
+    width: 1px;
+}
+.playlists-result__cards::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+/* End Scroll */
+
+.offer__list-item {
+    display: grid; /* define o modelo de layout do elemento como uma grade */
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  /* número de colunas na grade e a largura de cada coluna */
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+.grid-container {
+    grid-gap: var(--grid-gap);
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+    min-width: var(--min-container-width);
+}
+
+#result-artist {
+    padding: 20px 40px;
+}

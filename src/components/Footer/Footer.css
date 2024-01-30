@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 40px;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+}
+.footer .footer__text {
+    flex-shrink: 0;
+}
+.footer__text .title {
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.footer__text .subtitle {
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+.footer .footer__button button{
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
